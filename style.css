@@ -4,10 +4,14 @@
     margin:auto;
     margin-top: 2%;
     margin-bottom: 2%;
+    margin-left: 23%;
 }
 .container .card{
     margin: 3%;
 
+}
+.card:hover{
+    box-shadow: 0 0 50px rgba(33,33,33,.2);
 }
 .card-title{
     height: 75px;
@@ -31,4 +35,34 @@ button{
     margin-bottom: 25px;
     width: 150px;
     border-radius: 100%;
+}
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0d6efd;
+    padding-top: 60px;
+}  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+.sidenav a:hover {
+    color: grey;
+}
+@media only screen and (max-width:768px){
+    .sidenav{
+        display: none;
+    }
+    .container{
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr);
+    }
 }
